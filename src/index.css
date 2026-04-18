@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Global Utilities */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  @apply antialiased;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-300 ease-in-out;
+}
